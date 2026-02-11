@@ -134,7 +134,7 @@ export default function App() {
         <div className="flex justify-center gap-6 pt-10">
 
           <a
-            href="https://executorroom.vercel.app"
+            href="https://executor-room.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-500 hover:text-white transition transform hover:scale-110"
