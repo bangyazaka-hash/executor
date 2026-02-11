@@ -10,7 +10,6 @@ export default function App() {
   return (
     <div className="min-h-screen bg-neutral-950 text-white">
 
-      {/* BANNER */}
       <div className="w-full h-56 md:h-72 overflow-hidden">
         <img
           src="/banner.png"
@@ -21,7 +20,6 @@ export default function App() {
 
       <div className="max-w-4xl mx-auto px-6 py-16 space-y-20">
 
-        {/* HERO SECTION */}
         <section className="text-center space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold tracking-wide">
             Executor
@@ -34,7 +32,6 @@ export default function App() {
           </p>
         </section>
 
-        {/* ABOUT SECTION */}
         <section className="space-y-6">
           <h2 className="text-2xl font-semibold">
             Tentang Executor
@@ -44,7 +41,6 @@ export default function App() {
           </p>
         </section>
 
-        {/* GAME SECTION */}
         <section className="space-y-8">
           <h2 className="text-2xl font-semibold">
             Game yang Dimainkan
@@ -85,7 +81,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* ACTIVITY SECTION */}
         <section className="space-y-6">
           <h2 className="text-2xl font-semibold">
             Aktivitas Komunitas
@@ -98,7 +93,6 @@ export default function App() {
           </ul>
         </section>
 
-        {/* COMMUNITY STATS SECTION */}
         <section className="space-y-6">
           <h2 className="text-2xl font-semibold">
             Perkembangan Komunitas
@@ -110,7 +104,6 @@ export default function App() {
           </ul>
         </section>
 
-        {/* MEDIA SECTION */}
         <section className="space-y-6">
           <h2 className="text-2xl font-semibold">
             Konten dan Media
@@ -123,7 +116,6 @@ export default function App() {
           </ul>
         </section>
 
-        {/* CLOSING SECTION */}
         <section className="space-y-6 text-center">
           <h2 className="text-2xl font-semibold">
             Identitas Executor
@@ -132,15 +124,62 @@ export default function App() {
             Executor berkembang sebagai komunitas gaming yang terstruktur dan konsisten. Fokus utama adalah membangun tim yang solid serta menciptakan lingkungan bermain yang aktif dan suportif.
           </p>
         </section>
+        
+        <section className="space-y-6 text-center">
+          <h2 className="text-2xl font-semibold">
+            Join Executor on  Discord now!
+          </h2>
+        </section>
 
-        {/* SOCIAL ICONS */}
         <div className="flex justify-center gap-6 pt-10">
-          <Globe size={22} className="text-neutral-500" />
-          <DiscordLogo size={22} className="text-neutral-500" />
-          <TiktokLogo size={22} className="text-neutral-500" />
-          <InstagramLogo size={22} className="text-neutral-500" />
-          <YoutubeLogo size={22} className="text-neutral-500" />
+
+          <a
+            href="https://executorroom.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-500 hover:text-white transition transform hover:scale-110"
+          >
+            <Globe size={22} />
+          </a>
+
+          <a
+            href="https://discord.gg/Ugs8ckJS2x"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-500 hover:text-indigo-400 transition transform hover:scale-110"
+          >
+            <DiscordLogo size={22} />
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@executorroom?is_from_webapp=1&sender_device=pc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-500 hover:text-pink-400 transition transform hover:scale-110"
+          >
+            <TiktokLogo size={22} />
+          </a>
+
+          <a
+            href="https://www.instagram.com/executorroom/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-500 hover:text-rose-400 transition transform hover:scale-110"
+          >
+            <InstagramLogo size={22} />
+          </a>
+
+          <a
+            href="https://www.youtube.com/@executorroom"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-500 hover:text-red-500 transition transform hover:scale-110"
+          >
+            <YoutubeLogo size={22} />
+          </a>
+
         </div>
+
 
       </div>
     </div>
