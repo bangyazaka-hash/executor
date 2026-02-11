@@ -8,12 +8,33 @@ import {
 
 export default function App() {
   const links = [
-    { icon: <Globe size={20} />, label: "Our Website" },
-    { icon: <DiscordLogo size={20} />, label: "Executor Community" },
-    { icon: <TiktokLogo size={20} />, label: "TikTok" },
-    { icon: <InstagramLogo size={20} />, label: "Instagram" },
-    { icon: <YoutubeLogo size={20} />, label: "YouTube Channel" },
+    {
+      icon: <Globe size={20} />,
+      label: "Our Website",
+      url: "https://executorroom.vercel.app",
+    },
+    {
+      icon: <DiscordLogo size={20} />,
+      label: "Executor Community",
+      url: "https://discord.gg/Ugs8ckJS2x",
+    },
+    {
+      icon: <TiktokLogo size={20} />,
+      label: "TikTok",
+      url: "https://www.tiktok.com/@executorroom?is_from_webapp=1&sender_device=pc",
+    },
+    {
+      icon: <InstagramLogo size={20} />,
+      label: "Instagram",
+      url: "https://www.instagram.com/executorroom/",
+    },
+    {
+      icon: <YoutubeLogo size={20} />,
+      label: "YouTube Channel",
+      url: "https://www.youtube.com/@executorroom",
+    },
   ];
+
 
   return (
     <div className="min-h-screen bg-neutral-950 text-white flex justify-center">
@@ -41,16 +62,56 @@ export default function App() {
           ))}
         </div>
 
-        <div className="flex justify-center gap-6 mt-10 text-neutral-300">
-          <Globe size={22} />
-          <DiscordLogo size={22} />
-          <TiktokLogo size={22} />
-          <InstagramLogo size={22} />
-          <YoutubeLogo size={22} />
+        <div className="flex justify-center gap-6 mt-10">
+          <a
+            href="https://executorroom.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-400 hover:text-white transition transform hover:scale-110"
+          >
+            <Globe size={22} />
+          </a>
+
+          <a
+            href="https://discord.gg/Ugs8ckJS2x"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-400 hover:text-indigo-400 transition transform hover:scale-110"
+          >
+            <DiscordLogo size={22} />
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@executorroom?is_from_webapp=1&sender_device=pc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-400 hover:text-pink-400 transition transform hover:scale-110"
+          >
+            <TiktokLogo size={22} />
+          </a>
+
+          <a
+            href="https://www.instagram.com/executorroom/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-400 hover:text-rose-400 transition transform hover:scale-110"
+          >
+            <InstagramLogo size={22} />
+          </a>
+
+          <a
+            href="https://www.youtube.com/@executorroom"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-400 hover:text-red-500 transition transform hover:scale-110"
+          >
+            <YoutubeLogo size={22} />
+          </a>
         </div>
 
+
         <p className="text-center text-xs text-neutral-500 mt-10">
-          Join executor on Linktree today
+          Join executor on Discord now!
         </p>
       </div>
     </div>
