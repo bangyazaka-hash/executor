@@ -161,7 +161,7 @@ export default function App() {
           </a>
 
           <a
-            href="https://www.instagram.com/executorroom/"
+            href="https://www.instagram.com/executorroom?igsh=MWk2cGRxankyY3NiZA=="
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-500 hover:text-rose-400 transition transform hover:scale-110"
