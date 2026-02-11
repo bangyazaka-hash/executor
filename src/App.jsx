@@ -170,7 +170,7 @@ export default function App() {
           </a>
 
           <a
-            href="https://www.youtube.com/@executorroom"
+            href="https://www.youtube.com/@executor-s"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-500 hover:text-red-500 transition transform hover:scale-110"
