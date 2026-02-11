@@ -25,7 +25,7 @@ export default function App() {
             Executor
           </h1>
           <h2 className="text-xl text-neutral-300">
-            Gaming community yang aktif dan berkembang.
+            Gaming community yang aktif dan seru.
           </h2>
           <p className="text-neutral-400 max-w-2xl mx-auto">
             Executor adalah komunitas kecil yang sedang merintis dan membangun tim yang solid. Komunitas ini menjadi ruang bagi pemain yang ingin bermain bersama secara konsisten dan terarah.
@@ -78,6 +78,11 @@ export default function App() {
               <p>Game strategi berbasis clan war dengan partisipasi aktif dalam setiap perang.</p>
             </div>
 
+            <div>
+              <h3 className="text-white font-medium">Dan masih banyak lagi</h3>
+              <p>Kami memainkan game yang kami suka, tidak berfokus dengan satu game.</p>
+            </div>
+
           </div>
         </section>
 
@@ -98,7 +103,7 @@ export default function App() {
             Perkembangan Komunitas
           </h2>
           <ul className="list-disc list-inside text-neutral-400 space-y-2">
-            <li>Member aktif yang terus bertambah.</li>
+            <li>Member aktif yang seru dan ramah.</li>
             <li>Beberapa game aktif dimainkan setiap minggu.</li>
             <li>Event internal yang berjalan secara berkala.</li>
           </ul>
@@ -118,7 +123,7 @@ export default function App() {
 
         <section className="space-y-6 text-center">
           <h2 className="text-2xl font-semibold">
-            Identitas Executor
+            About Executor
           </h2>
           <p className="text-neutral-400 max-w-2xl mx-auto">
             Executor berkembang sebagai komunitas gaming yang terstruktur dan konsisten. Fokus utama adalah membangun tim yang solid serta menciptakan lingkungan bermain yang aktif dan suportif.
