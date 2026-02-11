@@ -7,112 +7,141 @@ import {
 } from "phosphor-react";
 
 export default function App() {
-  const links = [
-    {
-      icon: <Globe size={20} />,
-      label: "Our Website",
-      url: "https://executorroom.vercel.app",
-    },
-    {
-      icon: <DiscordLogo size={20} />,
-      label: "Executor Community",
-      url: "https://discord.gg/Ugs8ckJS2x",
-    },
-    {
-      icon: <TiktokLogo size={20} />,
-      label: "TikTok",
-      url: "https://www.tiktok.com/@executorroom?is_from_webapp=1&sender_device=pc",
-    },
-    {
-      icon: <InstagramLogo size={20} />,
-      label: "Instagram",
-      url: "https://www.instagram.com/executorroom/",
-    },
-    {
-      icon: <YoutubeLogo size={20} />,
-      label: "YouTube Channel",
-      url: "https://www.youtube.com/@executorroom",
-    },
-  ];
-
-
   return (
-    <div className="min-h-screen bg-neutral-950 text-white flex justify-center">
-      <div className="w-full max-w-sm px-4 py-10">
+    <div className="min-h-screen bg-neutral-950 text-white">
 
-        <div className="text-center mb-10">
-          <h1 className="text-lg font-semibold tracking-wide">
-            executor
+      {/* BANNER */}
+      <div className="w-full h-56 md:h-72 overflow-hidden">
+        <img
+          src="/banner.png"
+          alt="Executor Banner"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="max-w-4xl mx-auto px-6 py-16 space-y-20">
+
+        {/* HERO SECTION */}
+        <section className="text-center space-y-6">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-wide">
+            Executor
           </h1>
-          <p className="text-sm text-neutral-400 mt-1">
-            para pencari nafkah
+          <h2 className="text-xl text-neutral-300">
+            Gaming community yang aktif dan berkembang.
+          </h2>
+          <p className="text-neutral-400 max-w-2xl mx-auto">
+            Executor adalah komunitas kecil yang sedang merintis dan membangun tim yang solid. Komunitas ini menjadi ruang bagi pemain yang ingin bermain bersama secara konsisten dan terarah.
           </p>
+        </section>
+
+        {/* ABOUT SECTION */}
+        <section className="space-y-6">
+          <h2 className="text-2xl font-semibold">
+            Tentang Executor
+          </h2>
+          <p className="text-neutral-400">
+            Executor berisi pemain dari berbagai latar belakang game kompetitif dan casual. Komunitas ini menekankan kerja sama tim, komunikasi yang baik, dan perkembangan skill secara bertahap. Setiap member memiliki peran dan kontribusi dalam membangun lingkungan yang aktif.
+          </p>
+        </section>
+
+        {/* GAME SECTION */}
+        <section className="space-y-8">
+          <h2 className="text-2xl font-semibold">
+            Game yang Dimainkan
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-6 text-neutral-400">
+
+            <div>
+              <h3 className="text-white font-medium">PUBG Mobile</h3>
+              <p>Battle royale berbasis squad dengan fokus pada strategi rotasi dan koordinasi tim.</p>
+            </div>
+
+            <div>
+              <h3 className="text-white font-medium">Mobile Legends</h3>
+              <p>MOBA 5v5 dengan pembagian role dan fokus pada peningkatan rank.</p>
+            </div>
+
+            <div>
+              <h3 className="text-white font-medium">Valorant</h3>
+              <p>FPS taktis yang menekankan strategi, kontrol area, dan kerja sama tim.</p>
+            </div>
+
+            <div>
+              <h3 className="text-white font-medium">Free Fire</h3>
+              <p>Battle royale dengan tempo cepat dan permainan agresif.</p>
+            </div>
+
+            <div>
+              <h3 className="text-white font-medium">Minecraft</h3>
+              <p>Sandbox survival dengan proyek pembangunan bersama dalam satu server komunitas.</p>
+            </div>
+
+            <div>
+              <h3 className="text-white font-medium">Clash of Clans</h3>
+              <p>Game strategi berbasis clan war dengan partisipasi aktif dalam setiap perang.</p>
+            </div>
+
+          </div>
+        </section>
+
+        {/* ACTIVITY SECTION */}
+        <section className="space-y-6">
+          <h2 className="text-2xl font-semibold">
+            Aktivitas Komunitas
+          </h2>
+          <ul className="list-disc list-inside text-neutral-400 space-y-2">
+            <li>Mabar rutin setiap minggu.</li>
+            <li>Event internal komunitas.</li>
+            <li>Diskusi strategi dan meta game.</li>
+            <li>Dokumentasi gameplay melalui media sosial.</li>
+          </ul>
+        </section>
+
+        {/* COMMUNITY STATS SECTION */}
+        <section className="space-y-6">
+          <h2 className="text-2xl font-semibold">
+            Perkembangan Komunitas
+          </h2>
+          <ul className="list-disc list-inside text-neutral-400 space-y-2">
+            <li>Member aktif yang terus bertambah.</li>
+            <li>Beberapa game aktif dimainkan setiap minggu.</li>
+            <li>Event internal yang berjalan secara berkala.</li>
+          </ul>
+        </section>
+
+        {/* MEDIA SECTION */}
+        <section className="space-y-6">
+          <h2 className="text-2xl font-semibold">
+            Konten dan Media
+          </h2>
+          <ul className="list-disc list-inside text-neutral-400 space-y-2">
+            <li>Highlight pertandingan.</li>
+            <li>Cuplikan momen permainan.</li>
+            <li>Dokumentasi event komunitas.</li>
+            <li>Update aktivitas melalui TikTok, Instagram, dan YouTube.</li>
+          </ul>
+        </section>
+
+        {/* CLOSING SECTION */}
+        <section className="space-y-6 text-center">
+          <h2 className="text-2xl font-semibold">
+            Identitas Executor
+          </h2>
+          <p className="text-neutral-400 max-w-2xl mx-auto">
+            Executor berkembang sebagai komunitas gaming yang terstruktur dan konsisten. Fokus utama adalah membangun tim yang solid serta menciptakan lingkungan bermain yang aktif dan suportif.
+          </p>
+        </section>
+
+        {/* SOCIAL ICONS */}
+        <div className="flex justify-center gap-6 pt-10">
+          <Globe size={22} className="text-neutral-500" />
+          <DiscordLogo size={22} className="text-neutral-500" />
+          <TiktokLogo size={22} className="text-neutral-500" />
+          <InstagramLogo size={22} className="text-neutral-500" />
+          <YoutubeLogo size={22} className="text-neutral-500" />
         </div>
 
-        <div className="bg-neutral-900 rounded-3xl p-6 space-y-4">
-          {links.map((item, i) => (
-            <button
-              key={i}
-              className="w-full flex items-center justify-center gap-3 py-4 rounded-full bg-white text-black font-medium
-                         hover:bg-neutral-200 active:scale-95 transition"
-            >
-              {item.icon}
-              <span>{item.label}</span>
-            </button>
-          ))}
-        </div>
-
-        <div className="flex justify-center gap-6 mt-10">
-          <a
-            href="https://executorroom.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-neutral-400 hover:text-white transition transform hover:scale-110"
-          >
-            <Globe size={22} />
-          </a>
-
-          <a
-            href="https://discord.gg/Ugs8ckJS2x"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-neutral-400 hover:text-indigo-400 transition transform hover:scale-110"
-          >
-            <DiscordLogo size={22} />
-          </a>
-
-          <a
-            href="https://www.tiktok.com/@executorroom?is_from_webapp=1&sender_device=pc"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-neutral-400 hover:text-pink-400 transition transform hover:scale-110"
-          >
-            <TiktokLogo size={22} />
-          </a>
-
-          <a
-            href="https://www.instagram.com/executorroom/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-neutral-400 hover:text-rose-400 transition transform hover:scale-110"
-          >
-            <InstagramLogo size={22} />
-          </a>
-
-          <a
-            href="https://www.youtube.com/@executorroom"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-neutral-400 hover:text-red-500 transition transform hover:scale-110"
-          >
-            <YoutubeLogo size={22} />
-          </a>
-        </div>
-
-
-        <p className="text-center text-xs text-neutral-500 mt-10">
-          Join executor on Discord now!
-        </p>
       </div>
     </div>
   );
