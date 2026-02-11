@@ -16,41 +16,32 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen grid-bg text-white">
-      <div className="w-full max-w-sm mx-auto px-4 py-10">
+    <div className="min-h-screen bg-neutral-950 text-white flex justify-center">
+      <div className="w-full max-w-sm px-4 py-10">
 
-        {/* HEADER */}
-        <div className="text-center mb-12">
-          <div className="w-20 h-20 mx-auto rounded-full bg-primary text-neutralDark flex items-center justify-center font-semibold text-xl">
-            E
-          </div>
-          <h1 className="mt-4 text-primary font-semibold text-lg tracking-wide">
+        <div className="text-center mb-10">
+          <h1 className="text-lg font-semibold tracking-wide">
             executor
           </h1>
-          <p className="text-sm text-gray-400 mt-1">
+          <p className="text-sm text-neutral-400 mt-1">
             para pencari nafkah
           </p>
         </div>
 
-        {/* LINKS (TANPA GRID) */}
-        <div className="bg-neutralDark rounded-3xl py-8">
-          <div className="flex flex-col space-y-8">
-            {links.map((item, i) => (
-              <div
-                key={i}
-                className="mx-auto w-[340px] bg-white rounded-full shadow-lg"
-              >
-                <button className="w-full px-6 py-5 flex items-center justify-center gap-3 rounded-full text-black font-medium">
-                  {item.icon}
-                  <span>{item.label}</span>
-                </button>
-              </div>
-            ))}
-          </div>
+        <div className="bg-neutral-900 rounded-3xl p-6 space-y-4">
+          {links.map((item, i) => (
+            <button
+              key={i}
+              className="w-full flex items-center justify-center gap-3 py-4 rounded-full bg-white text-black font-medium
+                         hover:bg-neutral-200 active:scale-95 transition"
+            >
+              {item.icon}
+              <span>{item.label}</span>
+            </button>
+          ))}
         </div>
 
-        {/* SOCIALS */}
-        <div className="flex justify-center gap-6 mt-12 text-primary">
+        <div className="flex justify-center gap-6 mt-10 text-neutral-300">
           <Globe size={22} />
           <DiscordLogo size={22} />
           <TiktokLogo size={22} />
@@ -58,7 +49,7 @@ export default function App() {
           <YoutubeLogo size={22} />
         </div>
 
-        <p className="text-center text-xs text-gray-500 mt-12">
+        <p className="text-center text-xs text-neutral-500 mt-10">
           Join executor on Linktree today
         </p>
       </div>
