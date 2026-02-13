@@ -5,10 +5,35 @@ import {
   InstagramLogo,
   YoutubeLogo,
 } from "phosphor-react";
+import { Helmet } from "react-helmet-async";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-neutral-950 text-white">
+
+      {/* ===== SEO ===== */}
+      <Helmet>
+        <title>Executor Room | Komunitas Gaming Aktif</title>
+        <meta
+          name="description"
+          content="Executor Room adalah komunitas gaming aktif dan seru. Mabar rutin, event internal, dan berbagai game seperti PUBG Mobile, Mobile Legends, Valorant, Free Fire, dan lainnya."
+        />
+        <meta
+          name="keywords"
+          content="executor room, komunitas gaming, mabar, gaming indonesia, valorant, mobile legends, pubg mobile"
+        />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Executor Room | Komunitas Gaming Aktif" />
+        <meta
+          property="og:description"
+          content="Komunitas gaming aktif dengan mabar rutin, event internal, dan tim yang solid."
+        />
+        <meta property="og:image" content="/banner.png" />
+        <meta property="og:url" content="https://executor-room.vercel.app" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      {/* ===== END SEO ===== */}
 
       <div className="w-full h-56 md:h-72 overflow-hidden">
         <img
@@ -129,10 +154,10 @@ export default function App() {
             Executor berkembang sebagai komunitas gaming yang terstruktur dan konsisten. Fokus utama adalah membangun tim yang solid serta menciptakan lingkungan bermain yang aktif dan suportif.
           </p>
         </section>
-        
+
         <section className="space-y-6 text-center">
           <h2 className="text-2xl font-semibold">
-            Join Executor on  Discord now!
+            Join Executor on Discord now!
           </h2>
         </section>
 
@@ -157,7 +182,7 @@ export default function App() {
           </a>
 
           <a
-            href="https://www.tiktok.com/@executorroom?is_from_webapp=1&sender_device=pc"
+            href="https://www.tiktok.com/@executorroom"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-500 hover:text-pink-400 transition transform hover:scale-110"
@@ -166,7 +191,7 @@ export default function App() {
           </a>
 
           <a
-            href="https://www.instagram.com/executorroom?igsh=MWk2cGRxankyY3NiZA=="
+            href="https://www.instagram.com/executorroom"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-500 hover:text-rose-400 transition transform hover:scale-110"
@@ -184,7 +209,6 @@ export default function App() {
           </a>
 
         </div>
-
 
       </div>
     </div>
